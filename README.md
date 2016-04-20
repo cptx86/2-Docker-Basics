@@ -60,8 +60,17 @@ sudo cp /etc/bind/db.127 /etc/bind/db.192
 sudo vi /etc/bind/db.192
 ```
 #### Test Your DNS Lookup
-
-
+```
+nslookup two.cptx86.com
+```
+#### Test Reverse DNS Lookup
+```
+nslookup 192.168.1.202
+```
+#### Test Your DNS from Any Other Server on the Subnet
+```
+dig @192.168.1.202 cptx86.com -t AXFR
+```
 
 
 
