@@ -13,6 +13,11 @@ sudo apt-get update
 sudo apt-get install docker-engine
 sudo service docker start
 ```
+### Run Your First Container
+```
+sudo docker run hello-world
+```
+
 ## Appendix A: Test Computer System Configuration
 #### Installation of OpenSSH Server
 sudo apt-get install openssh-server
