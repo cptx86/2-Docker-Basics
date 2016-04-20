@@ -12,6 +12,8 @@ sudo apt-get install docker-engine
 sudo service docker start
 
 ## Appendix A: Test Computer System Configuration
+
+http://support.hostgator.com/articles/specialized-help/technical/ssh-keying-through-putty-on-windows-or-linux
 #### Static IP
 
 sudo vi /etc/network/interfaces
