@@ -12,7 +12,8 @@ sudo apt-get install docker-engine
 sudo service docker start
 
 ## Appendix A: Test Computer System Configuration
-### Install and Connect to Test Computer System with Putty
+#### Installation of OpenSSH Server
+#### Install and Connect to Test Computer System with Putty
 http://support.hostgator.com/articles/specialized-help/technical/ssh-keying-through-putty-on-windows-or-linux
 #### Static IP
 
