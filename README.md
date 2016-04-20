@@ -73,8 +73,18 @@ sudo vi /etc/hosts
 ```
 #### Additional Reading about DNS
 [Ubuntu Domain Name Service (DNS)] https://help.ubuntu.com/lts/serverguide/dns.html
-
-
+#### NFS
+#### Installation of NFS
+```sudo apt-get install nfs-kernel-server```
+#### Configure NFS
+```
+sudo vi /etc/exports
+sudo exportfs -a
+sudo service nfs-kernel-server start
+showmount -e 192.168.1.202
+```
+#### Additional Reading about NFS
+[Network File System] https://help.ubuntu.com/14.04/serverguide/network-file-system.html
 
 
 
