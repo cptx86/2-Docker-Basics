@@ -72,8 +72,28 @@ sudo docker ps
 sudo docker stop $(docker ps -qa)
 sudo docker rm $(docker ps -qa)
 ```
-
-
+### Review Basic Commands
+```
+sudo docker run hello-world
+sudo docker images
+sudo docker  ps -a
+sudo docker  ps
+sudo docker rm 3722c80e8a9c
+sudo docker rm $(sudo docker ps -a -q)
+sudo docker rmi hello-world
+sudo docker history hello-world
+sudo docker inspect b901d36b6f2f
+sudo docker run --name="hello-world" hello-world
+man docker-run
+sudo docker info
+sudo docker version
+sudo docker pull ubuntu:14.04.3
+sudo docker run -i -t ubuntu:14.04.3 /bin/bash
+sudo docker run -d -i ubuntu:14.04.3
+sudo docker stop $(sudo docker ps -qa)
+sudo docker rm $(sudo docker ps -qa)
+sudo docker rmi $(sudo docker images -qa)
+```
 
 
 
