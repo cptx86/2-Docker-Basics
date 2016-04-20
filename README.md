@@ -109,6 +109,24 @@ sudo service docker restart
 sudo cat /var/log/upstart/docker.log
 ```
 #### List Storage Usage
+```sudo du -sh /usr/local/docker```
+### Docker Hub
+#### Search for Public Images on Docker Hub
+```
+sudo docker search hello-world
+sudo docker pull hello-world
+```
+#### Login and Push an Image to Docker Hub
+```
+sudo docker images | grep hello-world
+sudo docker login
+```
+#### Create a Docker Hub Account and Repository
+[Docker Hub] https://hub.docker.com/register/
+#### Add User to the Docker Group
+
+
+
 
 
 
