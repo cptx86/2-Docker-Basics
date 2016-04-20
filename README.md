@@ -13,10 +13,7 @@ sudo apt-get install docker-engine
 sudo service docker start
 ```
 ### Run Your First Container
-```
-sudo docker run hello-world
-```
-
+```sudo docker run hello-world```
 ## Appendix A: Test Computer System Configuration
 #### Installation of OpenSSH Server
 sudo apt-get install openssh-server
@@ -58,20 +55,24 @@ sudo cp /etc/bind/db.127 /etc/bind/db.192
 sudo vi /etc/bind/db.192
 ```
 #### Test Your DNS Lookup
-```
-nslookup two.cptx86.com
-```
+```nslookup two.cptx86.com```
 #### Test Reverse DNS Lookup
-```
-nslookup 192.168.1.202
-```
+```nslookup 192.168.1.202```
 #### Test Your DNS from Any Other Server on the Subnet
+```dig @192.168.1.202 cptx86.com -t AXFR```
+#### Security Through Obscurity
 ```
+sudo vi /etc/bind/named.conf.local
+sudo service bind9 restart
 dig @192.168.1.202 cptx86.com -t AXFR
 ```
-#### Security Through Obscurity
-```sudo vi /etc/bind/named.conf.local```
-
+#### Modify Docker Daemon to Use DNS
+```
+sudo service docker restart
+sudo vi /etc/hosts
+```
+#### Additional Reading about DNS
+[Ubuntu Domain Name Service (DNS)] https://help.ubuntu.com/lts/serverguide/dns.html
 
 
 
