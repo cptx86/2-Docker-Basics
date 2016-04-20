@@ -122,10 +122,13 @@ sudo docker pull hello-world
 ```sudo gpasswd -a `id -un` docker```
 #### Login and Push an Image to Docker Hub
 ```
-sudo docker images | grep hello-world
-sudo docker login
+docker images | grep hello-world
+docker login
+docker tag hello-world cptx86/hello-world:latest
+docker push cptx86/hello-world:latest
 ```
-
+#### Additional Reading about Docker Hub
+[Welcome to Docker Hub] https://docs.docker.com/docker-hub/
 
 
 
