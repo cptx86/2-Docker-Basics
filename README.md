@@ -32,5 +32,6 @@ sudo vi /etc/network/interfaces
 sudo vi /etc/hosts
 sudo reboot
 ```
-
+#### Additional Reading about Networking
+[Ubuntu Networking] https://help.ubuntu.com/lts/serverguide/networking.html
 
