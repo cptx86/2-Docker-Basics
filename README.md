@@ -2,7 +2,7 @@
 ### Select a Test Computer System to Learn Docker
 ```uname -r```
 ### Installation of Docker on Your Test Computer System
-[xxx] https://docs.docker.com/engine/installation/
+[Install Docker Engine] https://docs.docker.com/engine/installation/
 #### Update the Ubuntu 14.04 LTS OS and Install Docker
 ```
 sudo apt-get update
