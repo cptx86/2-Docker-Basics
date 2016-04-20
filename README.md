@@ -19,11 +19,9 @@ ssh-keygen -t rsa
 #### Install and Connect to Test Computer System with Putty
 http://support.hostgator.com/articles/specialized-help/technical/ssh-keying-through-putty-on-windows-or-linux
 #### Static IP
-
+```
 sudo vi /etc/network/interfaces
-
 sudo vi /etc/hosts
-
 sudo reboot
 
 
