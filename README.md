@@ -13,6 +13,7 @@ sudo service docker start
 
 ## Appendix A: Test Computer System Configuration
 #### Installation of OpenSSH Server
+sudo apt-get install openssh-server
 #### Install and Connect to Test Computer System with Putty
 http://support.hostgator.com/articles/specialized-help/technical/ssh-keying-through-putty-on-windows-or-linux
 #### Static IP
