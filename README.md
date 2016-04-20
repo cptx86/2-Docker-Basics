@@ -14,7 +14,22 @@ sudo apt-get install docker-engine
 sudo service docker start
 ```
 ### Run Your First Container
+#### Verify Docker is Installed and Working
 ```sudo docker run hello-world```
+#### Run the hello-world Container Again
+```sudo docker run hello-world```
+#### List Images
+```sudo docker images```
+#### List All Containers
+```sudo docker ps -a```
+#### Remove Container by Container ID and List All Container
+```sudo docker rm 3722c80e8a9c```
+
+
+
+
+
+
 ## Appendix A: Test Computer System Configuration
 #### Installation of OpenSSH Server
 sudo apt-get install openssh-server
