@@ -42,13 +42,26 @@ sudo docker history hello-world
 #### List All Information Available on an Image or Container
 ```sudo docker inspect a3e5b6fb3fce```
 ### More About Containers
+```
+sudo docker run --name="hello-world" hello-world
+sudo docker ps -a
+```
+#### Remove Container by Container Name
+```sudo docker rm hello-world```
+#### Display Help for Command Usage, Function, and Options
+```sudo docker ps --help```
+#### Open Docker Run Command Manual Page
+```man docker-run```
+#### Display System-Wide Docker Information
+```sudo docker info```
+####
 
 
 
 
 
 
-## Appendix A: Test Computer System Configuration
+## Appendix A: Test Computer System Configuration####
 #### Installation of OpenSSH Server
 sudo apt-get install openssh-server
 #### Create SSH Keys
