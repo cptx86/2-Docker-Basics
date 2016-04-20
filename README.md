@@ -24,7 +24,12 @@ sudo service docker start
 #### List All Containers
 ```sudo docker ps -a```
 #### Remove Container by Container ID and List All Container
-```sudo docker rm 3722c80e8a9c```
+```
+sudo docker rm 3722c80e8a9c
+sudo docker ps -a
+sudo docker rm boring_saha
+sudo docker ps -a
+```
 
 
 
