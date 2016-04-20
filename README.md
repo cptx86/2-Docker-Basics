@@ -1,8 +1,6 @@
 ## 2   Docker Basics
 ### Select a Test Computer System to Learn Docker
-```
-uname -r
-```
+```uname -r```
 ### Installation of Docker on Your Test Computer System
 #### Update the Ubuntu 14.04 LTS OS and Install Docker
 ```
