@@ -94,7 +94,21 @@ sudo docker stop $(sudo docker ps -qa)
 sudo docker rm $(sudo docker ps -qa)
 sudo docker rmi $(sudo docker images -qa)
 ```
-
+### Where are Docker Images Stored?
+```
+sudo service docker stop
+sudo cp -rp /var/lib/docker /usr/local
+sudo rm -r /var/lib/docker
+sudo ln -s /usr/local/docker /var/lib/docker
+sudo service docker start
+```
+#### Modify Docker Daemon Startup Configuration File
+```
+sudo vi /etc/default/docker
+sudo service docker restart
+sudo cat /var/log/upstart/docker.log
+```
+#### List Storage Usage
 
 
 
