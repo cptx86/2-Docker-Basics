@@ -71,6 +71,10 @@ nslookup 192.168.1.202
 ```
 dig @192.168.1.202 cptx86.com -t AXFR
 ```
+#### Security Through Obscurity
+```sudo vi /etc/bind/named.conf.local```
+
+
 
 
 
