@@ -12,7 +12,7 @@ sudo apt-get install docker-engine
 sudo service docker start
 
 ## Appendix A: Test Computer System Configuration
-### Static IP
+#### Static IP
 
 sudo vi /etc/network/interfaces
 
