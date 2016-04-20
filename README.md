@@ -30,6 +30,18 @@ sudo docker ps -a
 sudo docker rm boring_saha
 sudo docker ps -a
 ```
+#### List Images
+```sudo docker images```
+#### Remove Image by Image Name
+```sudo docker rmi hello-world```
+#### Run New Container and Show History of Image
+```
+sudo docker run hello-world
+sudo docker history hello-world
+```
+#### List All Information Available on an Image or Container
+```sudo docker inspect b901d36b6f2f```
+### More About Containers
 
 
 
