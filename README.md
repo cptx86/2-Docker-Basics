@@ -119,7 +119,7 @@ sudo docker pull hello-world
 #### Create a Docker Hub Account and Repository
 [Docker Hub] https://hub.docker.com/register/
 #### Add User to the Docker Group
-sudo gpasswd -a `id -un` docker
+```sudo gpasswd -a `id -un` docker```
 #### Login and Push an Image to Docker Hub
 ```
 sudo docker images | grep hello-world
