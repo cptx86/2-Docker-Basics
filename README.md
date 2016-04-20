@@ -35,4 +35,34 @@ sudo reboot
 ```
 #### Additional Reading about Networking
 [Ubuntu Networking] https://help.ubuntu.com/lts/serverguide/networking.html
+#### DNS
+#### Installation of DNS
+```
+sudo apt-get update
+sudo apt-get install bind9 bind9-doc bind9utils
+```
+#### Configure DNS
+```
+sudo vi /etc/bind/named.conf.options
+sudo service bind9 restart
+```
+#### Create Primary Master for Domain
+```
+sudo vi /etc/bind/named.conf.local
+sudo cp /etc/bind/db.local  /etc/bind/db.cptx86.com
+sudo vi /etc/bind/db.cptx86.com
+sudo service bind9 restart
+```
+#### Create Reverse DNS
+```
+sudo vi /etc/bind/named.conf.local
+sudo cp /etc/bind/db.127 /etc/bind/db.192
+sudo vi /etc/bind/db.192
+```
+#### Test Your DNS Lookup
+
+
+
+
+
 
