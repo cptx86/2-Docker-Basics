@@ -54,7 +54,28 @@ sudo docker ps -a
 ```man docker-run```
 #### Display System-Wide Docker Information
 ```sudo docker info```
-####
+#### Display the Docker Version
+```sudo docker version```
+#### Pull an Image from the Docker Hub Registry
+```sudo docker pull ubuntu:14.04.3```
+#### Run an Interactive Shell in a Container
+```
+sudo docker run -i -t ubuntu:14.04.3 /bin/bash
+ps -ef
+exit
+sudo docker rm $(sudo docker ps -qa)
+```
+#### Run a Container in Detached Mode
+```
+sudo docker run -d -i ubuntu:14.04.3
+sudo docker ps
+sudo docker stop $(docker ps -qa)
+sudo docker rm $(docker ps -qa)
+```
+
+
+
+
 
 
 
