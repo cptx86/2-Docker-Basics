@@ -16,6 +16,7 @@ sudo service docker start
 ### Run Your First Container
 #### Verify Docker is Installed and Working
 ```sudo docker run hello-world```
+### You Just Launched Your First Container!
 #### Run the hello-world Container Again
 ```sudo docker run hello-world```
 #### List Images
