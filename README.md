@@ -129,9 +129,10 @@ docker push cptx86/hello-world:latest
 ```
 #### Additional Reading about Docker Hub
 [Welcome to Docker Hub] https://docs.docker.com/docker-hub/
-### Docker Security
-#### Docker Trusted Registry 
-[Docker Trusted Registry] https://docs.docker.com/docker-hub/official_repos/
+
+## Docker Security
+#### Docker Content Trust 
+[Official Repositories on Docker Hub] https://docs.docker.com/docker-hub/official_repos/
 #### Setup Docker to Run Without Requiring sudo
 ```sudo gpasswd -a `id -un` docker```
 ```
