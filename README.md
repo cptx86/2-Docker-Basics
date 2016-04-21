@@ -129,7 +129,9 @@ docker push cptx86/hello-world:latest
 ```
 #### Additional Reading about Docker Hub
 [Welcome to Docker Hub] https://docs.docker.com/docker-hub/
-
+### Docker Security
+#### Docker Trusted Registry 
+[Docker Trusted Registry] https://docs.docker.com/docker-hub/official_repos/
 
 
 
