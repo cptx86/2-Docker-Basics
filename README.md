@@ -168,25 +168,26 @@ sudo cat /var/log/upstart/docker.log
 #### Additional Reading about Securing Docker in a Linux System
 [Docker Security] http://docs.docker.com/articles/security
 https://docs.docker.com/engine/security/security/
+
 [Docker Gets Serious About Security] http://www.eweek.com/security/docker-gets-serious-about-security.html
+
 [Cross-Site Scripting (XSS)] https://www.owasp.org/index.php/Cross-site_Scripting_%28XSS%29
 
-Docker Bench for Security is a script that checks for dozens of common best-practices around deploying Docker containers in production:
-https://github.com/docker/docker-bench-security
-Ubuntu Security
-https://help.ubuntu.com/community/Security
-Ubuntu security notices
-www.ubuntu.com/usn/
-Linux Kernel Security (SELinux vs AppArmor vs Grsecurity)
-http://www.cyberciti.biz/tips/selinux-vs-apparmor-vs-grsecurity.html
-OpenSSL
-https://help.ubuntu.com/community/OpenSSL
-Center for Internet Security Docker 1.6 Benchmark v1.0.0
-https://benchmarks.cisecurity.org/downloads/show-single/index.cfm?file=docker16.100
-Subscribing to ubuntu-security-announce
-https://lists.ubuntu.com/mailman/listinfo/ubuntu-security-announce
-Let’s Encrypt is a new Certificate Authority
-https://letsencrypt.org/
+[Docker Bench for Security is a script that checks for dozens of common best-practices around deploying Docker containers in production:] https://github.com/docker/docker-bench-security
+
+[Ubuntu Security] https://help.ubuntu.com/community/Security
+
+[Ubuntu security notices] www.ubuntu.com/usn/
+
+[Linux Kernel Security (SELinux vs AppArmor vs Grsecurity)] http://www.cyberciti.biz/tips/selinux-vs-apparmor-vs-grsecurity.html
+
+[OpenSSL] https://help.ubuntu.com/community/OpenSSL
+
+[Center for Internet Security Docker 1.6 Benchmark v1.0.0] https://benchmarks.cisecurity.org/downloads/show-single/index.cfm?file=docker16.100
+
+[Subscribing to ubuntu-security-announce] https://lists.ubuntu.com/mailman/listinfo/ubuntu-security-announce
+
+[Let’s Encrypt is a new Certificate Authority] https://letsencrypt.org/
 
 
 
