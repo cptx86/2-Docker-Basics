@@ -132,6 +132,27 @@ docker push cptx86/hello-world:latest
 ### Docker Security
 #### Docker Trusted Registry 
 [Docker Trusted Registry] https://docs.docker.com/docker-hub/official_repos/
+#### Setup Docker to Run Without Requiring sudo
+```sudo gpasswd -a `id -un` docker```
+```
+docker run hello-world
+sudo service docker stop
+sudo service docker start
+sudo service docker restart
+```
+#### Modify Docker Daemon Configuration File with Log Level
+```sudo vi /etc/default/docker```
+```
+DOCKER_OPTS="\
+      --graph=/usr/local/docker \
+      --dns 192.168.1.202 \
+      --dns 8.8.8.8 \
+      --dns 8.8.4.4 \
+      --log-level error \
+      "
+```
+
+
 
 
 
