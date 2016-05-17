@@ -22,15 +22,16 @@ sudo service docker start
 ```sudo docker images```
 #### List All Containers
 ```sudo docker ps -a```
-#### Remove Container by Container ID and List All Container
+#### Remove Container by Container ID
 ```
 sudo docker rm 3722c80e8a9c
 sudo docker ps -a
-sudo docker rm boring_saha
+```
+#### Remove Containers by Container Name
+```
+sudo docker rm high_yalow
 sudo docker ps -a
 ```
-#### List Images
-```sudo docker images```
 #### Remove Image by Image Name
 ```sudo docker rmi hello-world```
 #### Run New Container and Show History of Image
