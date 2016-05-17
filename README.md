@@ -1,6 +1,4 @@
 ## 2   Docker Basics
-### Select a Test Computer System to Learn Docker
-```uname -r```
 ### Installation of Docker on Your Test Computer System
 [Install Docker Engine] https://docs.docker.com/engine/installation/
 #### Update the Ubuntu 14.04 LTS OS and Install Docker
@@ -10,6 +8,7 @@ sudo apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58
 echo "deb https://apt.dockerproject.org/repo ubuntu-trusty main" > docker.list
 sudo mv docker.list /etc/apt/sources.list.d/docker.list
 sudo apt-get update
+sudo apt-get install linux-image-extra-$(uname -r)
 sudo apt-get install docker-engine
 sudo service docker start
 ```
