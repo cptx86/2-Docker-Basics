@@ -46,11 +46,10 @@ sudo docker history hello-world
 ```
 #### List All Information Available About a Container or Image
 ```sudo docker inspect a3e5b6fb3fce```
-### More About Containers
-```
-sudo docker run --name="hello-world" hello-world
-sudo docker ps -a
-```
+
+
+
+
 #### Remove Container by Container Name
 ```sudo docker rm hello-world```
 #### Display Help for Command Usage, Function, and Options
