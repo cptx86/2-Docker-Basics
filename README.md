@@ -34,12 +34,17 @@ sudo docker ps -a
 ```
 #### Remove Image by Image Name
 ```sudo docker rmi hello-world```
+#### Naming a Container
+```
+sudo docker run --name="test-hello-world" hello-world
+sudo docker ps -a
+```
 #### Run New Container and Show History of Image
 ```
 sudo docker run hello-world
 sudo docker history hello-world
 ```
-#### List All Information Available on an Image or Container
+#### List All Information Available About a Container or Image
 ```sudo docker inspect a3e5b6fb3fce```
 ### More About Containers
 ```
