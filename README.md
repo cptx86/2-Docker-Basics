@@ -39,21 +39,22 @@ sudo docker ps -a
 sudo docker run --name="test-hello-world" hello-world
 sudo docker ps -a
 ```
-#### Run New Container and Show History of Image
+#### Show History of Images
 ```
 sudo docker run hello-world
 sudo docker history hello-world
 ```
 #### List All Information Available About a Container or Image
 ```sudo docker inspect a3e5b6fb3fce```
+####    Display Docker Help
+```
+sudo docker --help
+sudo docker ps --help
+```
 
 
 
 
-#### Remove Container by Container Name
-```sudo docker rm hello-world```
-#### Display Help for Command Usage, Function, and Options
-```sudo docker ps --help```
 #### Open Docker Run Command Manual Page
 ```man docker-run```
 #### Display System-Wide Docker Information
