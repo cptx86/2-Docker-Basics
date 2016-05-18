@@ -73,6 +73,17 @@ sudo docker stop $(docker ps -qa)
 sudo docker rm $(docker ps -qa)
 ```
 #### Run a Command in a Running Container
+```
+sudo docker ps -l -q
+sudo docker exec 13aa313e3c88 /bin/ip a
+sudo docker exec -i -t 13aa313e3c88 /bin/sh
+exit
+sudo docker exec $(sudo docker ps -l -q) /bin/ip a
+```
+#### Stop All Containers Using Command Substitution
+```sudo docker stop $(sudo docker ps -q) ```
+#### Remove All Containers Using Command Substitution
+```sudo docker rm $(sudo docker ps -aq)```
 
 
 
