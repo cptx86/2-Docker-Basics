@@ -65,8 +65,6 @@ sudo docker run -i -t alpine /bin/sh
 ps
 exit
 ```
-==>
-
 #### Run a Container in Detached Mode
 ```
 sudo docker run -d -i ubuntu:14.04.3
@@ -74,6 +72,12 @@ sudo docker ps
 sudo docker stop $(docker ps -qa)
 sudo docker rm $(docker ps -qa)
 ```
+#### Run a Command in a Running Container
+
+
+
+
+
 ### Review Basic Commands
 ```
 sudo docker run hello-world
