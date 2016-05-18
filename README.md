@@ -51,25 +51,22 @@ sudo docker history hello-world
 sudo docker --help
 sudo docker ps --help
 ```
-
-
-
-
-#### Open Docker Run Command Manual Page
+#### Display Manual Page for ‘Docker Run’ Command
 ```man docker-run```
 #### Display System-Wide Docker Information
 ```sudo docker info```
 #### Display the Docker Version
 ```sudo docker version```
 #### Pull an Image from the Docker Hub Registry
-```sudo docker pull ubuntu:14.04.3```
+```sudo docker pull alpine```
 #### Run an Interactive Shell in a Container
 ```
-sudo docker run -i -t ubuntu:14.04.3 /bin/bash
-ps -ef
+sudo docker run -i -t alpine /bin/sh
+ps
 exit
-sudo docker rm $(sudo docker ps -qa)
 ```
+==>
+
 #### Run a Container in Detached Mode
 ```
 sudo docker run -d -i ubuntu:14.04.3
